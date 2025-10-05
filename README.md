@@ -24,19 +24,12 @@ There's a significant gap between academic cryptography and practical tools for 
 ### Simple API Design
 
 ```python
-from easyzkp import KeyPair, Prover, Verifier
+from easyzkp import ...
 
-# Generate cryptographic keys
-keypair = KeyPair.generate()
-
-# Client: Create a proof of knowledge
-proof = Prover(keypair.private_key).create_proof(message="login_request")
-
-# Server: Verify the proof
-verified = Verifier(keypair.public_key).verify_proof(proof)
+#currently working on functions
 ```
 
-**Complex cryptography, simple interface.** All the mathematical complexity—nonce generation, challenge computation, context binding, multi-round execution—is handled automatically while remaining configurable for advanced users.
+**Complex cryptography, simple interface.** All the mathematical complexity—nonce generation, challenge computation, context binding, multi-round execution is handled automatically while remaining configurable for advanced users.
 
 ### Target Use Cases
 
