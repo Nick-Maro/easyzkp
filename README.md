@@ -29,7 +29,7 @@ from easyzkp import ...
 #currently working on functions
 ```
 
-**Complex cryptography, simple interface.** All the mathematical complexity—nonce generation, challenge computation, context binding, multi-round execution is handled automatically while remaining configurable for advanced users.
+**Complex cryptography, simple interface.** All the mathematical complexity nonce generation, challenge computation, context binding, multi-round execution is handled automatically while remaining configurable for advanced users.
 
 ### Target Use Cases
 
@@ -104,7 +104,7 @@ The probability of successfully guessing a valid response for a single challenge
 
 $$P_{\text{single round}} = \frac{1}{2^{256}} \approx 8.6 \times 10^{-78}$$
 
-This probability is computationally negligible—far below any practical threshold for cryptographic security. For context, this is orders of magnitude smaller than the probability of:
+This probability is computationally negligible far below any practical threshold for cryptographic security. For context, this is orders of magnitude smaller than the probability of:
 - Finding a specific atom in the observable universe (~$10^{-80}$)
 - Two randomly generated UUIDs colliding (~$10^{-38}$ for standard UUIDs)
 
@@ -135,7 +135,7 @@ As shown in the graph, the probability decreases exponentially following the for
 
 ### Practical Interpretation
 
-Each authentication round independently adds 256 bits of cryptographic security. Even a minimal number of rounds makes the probability of a successful brute-force attack astronomically low—far beyond any conceivable computational capability, including quantum computers in the foreseeable future.
+Each authentication round independently adds 256 bits of cryptographic security. Even a minimal number of rounds makes the probability of a successful brute-force attack astronomically low far beyond any conceivable computational capability, including quantum computers in the foreseeable future.
 
 For example, with just 3 rounds:
 $$P_3 = 2^{-768} \approx 5.4 \times 10^{-232}$$
@@ -163,7 +163,7 @@ The combination of **Non-Interactive Proofs of Knowledge** and **multi-round Sch
 
  **Efficient Implementation**: Schnorr signatures are compact and computationally efficient, requiring only a few elliptic curve operations per round.
 
- **Post-Quantum Considerations**: While elliptic curve discrete logarithm is vulnerable to Shor's algorithm on large-scale quantum computers, the multi-round approach and potential use of hash-based commitments provide additional security layers.
+ **Post-Quantum Considerations**: While elliptic curve discrete logarithm is vulnerable to Shor's algorithm on large scale quantum computers, the multi-round approach and potential use of hash based commitments provide additional security layers.
 
 This makes NPK Schnorr authentication ideal for:
 - Blockchain and cryptocurrency wallets
